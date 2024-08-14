@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-19dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_reg_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_titulo"
+            android:textAlignment="textStart"
+            android:textColor="?attr/colorPrimarioTexto"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/iv_reg_icono"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_reg_foto"
+        android:layout_width="93dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:cropToPadding="true"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/camara" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="192dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="138dp"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/reg_nombre"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="?attr/colorPrimarioTexto" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/reg_email"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="?attr/colorPrimarioTexto" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_pass1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/reg_pass1"
+            android:inputType="textPassword"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="?attr/colorPrimarioTexto" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_pass2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/reg_pass2"
+            android:inputType="textPassword"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="?attr/colorPrimarioTexto" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="203dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/reg_bienvenida"
+        android:textAlignment="textStart"
+        android:textColor="?attr/colorPrimarioTexto"
+        android:textSize="13.5sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_reg_foto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_reg_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/reg_direccion"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="?attr/colorPrimarioTexto" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <CheckBox
+            android:id="@+id/cb_reg_terminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:buttonTint="?attr/colorPrimarioTexto" />
+
+        <TextView
+            android:id="@+id/tv_reg_terminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_aceptar_terminos"
+            android:textColor="?attr/colorPrimarioTexto"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_reg_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="?attr/colorPrimario"
+        android:text="@string/reg_boton_registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

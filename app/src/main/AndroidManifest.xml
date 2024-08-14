@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.motorc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Principal"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".productos.FormPedido"
+            android:exported="false" />
+        <activity
+            android:name="com.example.motorc.inicio.Portada"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.motorc.inicio.RegistroUsuario"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motorc.inicio.IngresoUsuario"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motorc.Inicio"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motorc.inicio.Terminos"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motorc.usuarios.Boxes"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motorc.usuarios.EditarUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".productos.EditarProductos"
+            android:exported="true" />
+        <activity
+            android:name=".productos.ListaProductos"
+            android:exported="true"
+            android:theme="@style/Theme.Buscar" />
+        <activity
+            android:name=".usuarios.ListaUsuarios"
+            android:exported="true"
+            android:theme="@style/Theme.Buscar" />
+        <activity
+            android:name=".usuarios.Ajustes"
+            android:configChanges="uiMode"
+            android:exported="true" />
+        <activity
+            android:name=".productos.ListaPedidos"
+            android:exported="true" />
+        <activity
+            android:name=".productos.ChatPedido"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.motorc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

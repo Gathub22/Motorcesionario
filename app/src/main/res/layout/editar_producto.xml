@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="?attr/colorPrimario"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_pro_foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="0"
+                    app:backgroundTint="?attr/colorPrimario"
+                    app:srcCompat="@drawable/camara" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:background="?attr/colorPrimario"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        app:backgroundTint="?attr/colorPrimario"
+                        app:tint="#FFFFFF">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pro_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/colorSecundario"
+                            android:hint="Nombre del producto"
+                            android:textColor="#FFFFFF" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        app:background="?attr/colorPrimario"
+                        android:layout_weight="6">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pro_precio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Precio"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+
+                            app:backgroundTint="?attr/colorSecundario" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_por_tipos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    app:background="?attr/colorPrimario"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_por_vehiculo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/pro_vehiculo"
+                        android:textColor="#FFFFFF"
+                        app:backgroundTint="?attr/colorPrimario"
+                        app:buttonTint="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/rb_por_repuesto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_repuesto"
+                        android:textColor="#FFFFFF"
+                        app:backgroundTint="?attr/colorPrimario"
+                        app:buttonTint="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/rb_por_otro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_otro"
+                        android:textColor="#FFFFFF"
+                        app:backgroundTint="?attr/colorPrimario"
+                        app:buttonTint="#FFFFFF" />
+
+
+                </RadioGroup>
+
+                <Switch
+                    android:id="@+id/sw_pro_disponible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Mostrar"
+                    android:textColor="#FFFFFF"
+                    app:buttonTint="?attr/colorSecundarioTexto" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:tint="#FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_por_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="?attr/colorSecundario"
+                        android:hint="Descripción del producto"
+                        android:textColor="#FFFFFF"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/bt_pro_comprar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="?attr/colorPrimario"
+                    app:backgroundTint="#FFFFFF"
+                    android:text="Comprar"
+                    android:textSize="26sp"
+                    app:fontWeight="20" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

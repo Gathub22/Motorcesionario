@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimario" format="color"/>
+    <attr name="colorSecundario" format="color"/>
+    <attr name="colorPrimarioTexto" format="color"/>
+    <attr name="colorSecundarioTexto" format="color"/>
+    <attr name="colorBocadillo" format="color"/>
+    <attr name="colorBocadilloTexto" format="color"/>
+    <attr name="colorBoton" format="color"/>
+    <attr name="colorFondo" format="color"/>
+    <attr name="colorAceptar" format="color"/>
+    <attr name="colorEnviar" format="color"/>
+    <attr name="colorRechazar" format="color"/>
+    <attr name="colorRecibir" format="color"/>
+    <attr name="transparencia" format="color"/>
+</resources>

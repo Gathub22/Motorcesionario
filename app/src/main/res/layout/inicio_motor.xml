@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimario"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:theme="@style/Theme.Principal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimario"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fr_usr_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="?attr/colorPrimario"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_ipr_foto"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="centerCrop"
+                        app:backgroundTint="?attr/colorPrimario"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <ImageView
+                        android:id="@+id/iv_usr_admin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:background="@drawable/estado_circulo"
+                        app:srcCompat="@drawable/admin" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimario"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/tv_ipr_nombre"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimario"
+                    android:text="Nombre"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorPrimario"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_ipr_comprar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="?attr/colorPrimario"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icono_ajustes" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_ini_gateria"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="118dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boxes" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:background="?attr/colorPrimario"
+                            app:backgroundTint="?attr/colorPrimario"
+                            android:text="@string/ini_publico"
+                            android:theme="@style/Theme.Principal"
+                            app:icon="@drawable/baseline_people_alt_24" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_ini_eventos"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="118dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/eventos" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:background="?attr/colorPrimario"
+                            app:backgroundTint="?attr/colorPrimario"
+                            android:text="@string/ini_eventos"
+                            app:icon="@drawable/baseline_favorite_24" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_ini_productos"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="118dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/productos" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:background="?attr/colorPrimario"
+                            app:backgroundTint="?attr/colorPrimario"
+                            android:text="@string/ini_productos"
+                            android:theme="@style/Theme.Principal"
+                            app:icon="@drawable/icono_catalogo" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_ini_pedidos"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="118dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pedidos_fondo" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:background="?attr/colorPrimario"
+                            app:backgroundTint="?attr/colorPrimario"
+                            android:text="@string/ini_pedidos"
+                            app:icon="@drawable/pedidos" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/ll_ini_usuarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="118dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/usuarios" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:background="?attr/colorPrimario"
+                            app:backgroundTint="?attr/colorPrimario"
+                            android:text="@string/ini_usuarios"
+                            app:icon="@drawable/baseline_search_24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_ini_salir"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="?attr/colorPrimario"
+                        android:text="@string/ini_salir"
+                        app:icon="@drawable/baseline_exit_to_app_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

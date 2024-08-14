@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ter_titulo_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/ter_titulo_principal"
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimarioTexto"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_ter_aclaracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="textStart"
+                android:justificationMode="inter_word"
+                android:text="@string/ter_aclaracion" />
+
+            <TextView
+                android:id="@+id/tv_ter_uso_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/ter_uso_titulo"
+                android:textColor="?attr/colorPrimarioTexto"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ter_uso_contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ter_uso_contenido"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorPrimarioTexto"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ter_privacidad_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/ter_privacidad_titulo"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorPrimarioTexto"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ter_privacidad_contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ter_privacidad_contenido"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorPrimarioTexto"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_ter_volver"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="?attr/colorPrimario"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/ter_volver" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

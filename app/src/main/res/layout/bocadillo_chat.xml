@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_cht_avatar_emisor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/ly_cht_emisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/iv_cht_avatar_emisor"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_cht_fecha_emisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="?attr/colorBocadilloTexto" />
+
+        <TextView
+            android:id="@+id/tv_cht_mensaje_emisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/colorBocadillo"
+            android:maxWidth="200dp"
+            android:padding="10dp"
+            android:text="mensaje"
+            android:textColor="?attr/colorBocadilloTexto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_cht_receptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/iv_cht_avatar_receptor"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_cht_fecha_receptor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textColor="?attr/colorBocadilloTexto" />
+
+        <TextView
+            android:id="@+id/tv_cht_mensaje_receptor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/colorBocadillo"
+            android:maxWidth="200dp"
+            android:padding="10dp"
+            android:text="mensaje"
+            android:textColor="?attr/colorBocadilloTexto" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cht_avatar_receptor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
